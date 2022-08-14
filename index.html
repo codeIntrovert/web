@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alphavibe</title>
+    <style>
+        ::-webkit-scrollbar{
+        color: #000000;
+        }
+        body{background-color: black;}
+         .button {
+          border: none;
+          color:rgb(255, 255, 255);
+          padding-bottom: 40%;
+          padding-top: 5%;
+          padding-left: 10%;
+          padding-right: 10%;
+          text-align: center;
+          text-decoration: none;
+
+          font-size: large;
+          cursor:pointer ;
+          float: left;
+        }
+        .button:hover{
+            color:black;
+            opacity: 90%;
+
+        }
+        .btn-group{
+
+           margin-left: 6.5%;
+           margin-top: 5%;
+        }
+        .K57B9D{background-color: #B2A4FF;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius:30px ;}
+        .E63946{
+            background-color: #f56698;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius:30px ;
+        }
+        .F1FAEE{background-color: #FFC18E;}
+        .A8DADC{background-color: #f18d8d;}
+        ion-icon{
+            font-size: 35px;
+        }
+        @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+            .button, .ion-icon{
+                
+                padding: 6vw;
+                padding-top: 10vw;
+                padding-bottom: 80vw;
+                margin: auto;
+          text-align: center;
+          font-size: 12px;
+                }
+            .btn-group{
+                margin: 10vw;
+            }
+            }
+        </style>
+</head>
+<body>
+    <div class="btn-group">
+        <button class="button E63946" onfocus="heart()" onblur="stop()" ><ion-icon name="heart-circle"></ion-icon></button>
+        <button class="button F1FAEE" onfocus="charge()" onblur="stop()"><ion-icon name="battery-charging-outline"></ion-icon></button>
+        <button class="button A8DADC" onfocus="bandage()" onblur="stop()"><ion-icon name="bandage"></ion-icon></button>
+        <button class="button K57B9D" onfocus="boat()" onblur="stop()"><ion-icon name="boat"></ion-icon></button>
+      </div>
+      <p style="clear:both"></p>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="scripts.js"></script>
+</body>
+<audio id="heart">
+    <source src="heart.mp3" type="audio/mpeg">
+</audio>
+<audio id="charge">
+    <source src="charge.mp3" type="audio/mpeg">
+</audio>
+<audio id="bandage">
+    <source src="bandage.mp3" type="audio/mpeg">
+</audio>
+<audio id="boat">
+    <source src="boat.mp3" type="audio/mpeg">
+</audio>
+</html>
