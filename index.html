@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ondblclick="stop()">
 <head>
 
     <meta charset="UTF-8">
     <meta name="theme-color" content="#000000">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alphavibe</title>
     <style>
+        body
+        {
+            overflow: hidden;
+            margin-bottom: 100vh;
+        }
         ::-webkit-scrollbar{
         color: #000000;
         }
@@ -49,29 +53,31 @@
         ion-icon{
             font-size: 35px;
         }
-        @media only screen and (max-width: 620px) {
+        @media only screen and (max-width: 780px) {
         /* For mobile phones: */
-            .button, .ion-icon{
-                
-                padding: 6vw;
-                padding-top: 10vw;
-                padding-bottom: 80vw;
-                margin: auto;
+            .button, .ion-icon {
+
+                       border: none;
+          color:rgb(255, 255, 255);
+          padding-bottom: 70vh;
+          padding-top: 5vw;
+          padding-left: 5vw;
+          padding-right: 5vw;
           text-align: center;
-          font-size: 12px;
-                }
+          text-decoration: none;}
             .btn-group{
                 margin: 10vw;
+
             }
             }
         </style>
 </head>
-<body>
+<body >
     <div class="btn-group">
-        <button class="button E63946" onfocus="heart()" onblur="stop()" ><ion-icon name="heart-circle"></ion-icon></button>
-        <button class="button F1FAEE" onfocus="charge()" onblur="stop()"><ion-icon name="battery-charging-outline"></ion-icon></button>
-        <button class="button A8DADC" onfocus="bandage()" onblur="stop()"><ion-icon name="bandage"></ion-icon></button>
-        <button class="button K57B9D" onfocus="boat()" onblur="stop()"><ion-icon name="boat"></ion-icon></button>
+        <button class="button E63946" onclick="heart()"  ondblclick="stop()"><ion-icon name="heart-circle"></ion-icon></button>
+        <button class="button F1FAEE" onclick="charge()" ondblclick="stop()"><ion-icon name="battery-charging-outline"></ion-icon></button>
+        <button class="button A8DADC" onclick="bandage()" ondblclick="stop()"><ion-icon name="bandage"></ion-icon></button>
+        <button class="button K57B9D" onclick="boat()" ondblclick="stop()"><ion-icon name="boat"></ion-icon></button>
       </div>
       <p style="clear:both"></p>
 
